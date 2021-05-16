@@ -105,3 +105,13 @@ client.on("emojiUpdate", (emoji) => {
 console.log(`${emoji.name} Adlı Kanal Güncellendi.`)
 })
 ```
+
+## Emoji Eventleri (8)
+
+### Guild Create :
+Açıklama : Bot Bir Sunucuya Katıldığında Çalışır
+```js
+client.on("guildCreate", (guild) => {
+console.log(`${guild.name} Adlı Sunucuya Katıldım.`)
+})
+```
