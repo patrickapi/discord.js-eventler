@@ -1,6 +1,6 @@
 # Discord.js'teki Eventlerin Türkçe Bir Şekilde Anlatımı
 
-Hata var ise [https://github.com/xPatrickZ/discord.js-eventler/issues](Buraya) Yazmayı Unutmayın.
+Hata var ise [Buraya](https://github.com/xPatrickZ/discord.js-eventler/issues) Yazmayı Unutmayın.
 
 Ufak Bilgilendirme :
 ```js
