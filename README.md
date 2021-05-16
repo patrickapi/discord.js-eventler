@@ -18,10 +18,11 @@ Açıklama : Bir Mesaj Atıldığında Çalışır.
 client.on("message", message => {
 console.log(`${message.content} Adlı Mesaj Atıldı.`)
 })
-
+```
 ### Message Update :
 Açıklama : Bir Mesaj Düzenlendiğinde çalışır.
 ```js
 client.on("messageUpdate", (oldMessage,newMessage) => {
 console.log(`${oldMessage.content} Adlı Mesaj ${newMessage.content} Olarak Düzenlendi.`)
 })
+```
