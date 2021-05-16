@@ -170,7 +170,15 @@ console.log(`${oldMember.username} Adlı Kişi Bilgilerini Güncelledi.`)
 ### Ready  :
 Açıklama : Bot Aktif Olduğunda Çalışır.
 ```js
-client.on("guildMemberUpdate", (oldMember,newMember) => {
-console.log(`${oldMember.username} Adlı Kişi Bilgilerini Güncelledi.`)
+client.on("ready", () => {
+console.log(`Bot Aktif Oldu!`)
+})
+```
+
+### Error  :
+Açıklama : Bot Error Verdiğinde Çalışır.
+```js
+client.on("error", (err) => {
+console.log(`Error!`+ err)
 })
 ```
