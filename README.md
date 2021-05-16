@@ -132,28 +132,35 @@ console.log(`${guild.name} Adlı Sunucuda ${user.username} Adlı Kişi Banlandı
 ### Guild Ban Remove :
 Açıklama : Sunucuda Ban Kaldırıldığında Çalışır.
 ```js
-client.on("guildBanRemove, (guild,user) => {
+client.on("guildBanRemove", (guild,user) => {
 console.log(`${guild.name} Adlı Sunucuda ${user.username} Adlı Kişinin Banı Kaldırıldı.`)
 })
 ```
 ### Guild Update  :
 Açıklama : Sunucuda Değişiklik Yapıldığında Çalışır.
 ```js
-client.on("guildBanRemove, (oldGuild,newGuild) => {
+client.on("guildBanRemove", (oldGuild,newGuild) => {
 console.log(`${oldGuild.name} Düzenlendi.`)
 })
 ```
 ### Guild Member Add  :
 Açıklama : Sunucuya Birisi Katılınca Çalışır.
 ```js
-client.on("guildMemberAdd, (member) => {
+client.on("guildMemberAdd", (member) => {
 console.log(`${member} Sunucuya Katıldı..`)
 })
 ```
 ### Guild Member Remove  :
 Açıklama : Sunucudan Birisi Çıkınca Çalışır.
 ```js
-client.on("guildMemberRemove, (member) => {
+client.on("guildMemberRemove", (member) => {
 console.log(`${member} Sunucudan Ayrıldı.`)
+})
+```
+### Guild Member Update  :
+Açıklama : Sunucudan Birisi Bilgilerini Güncelleyince Çalışır.
+```js
+client.on("guildMemberUpdate", (oldMember,newMember) => {
+console.log(`${oldMember.username} Adlı Kişi Bilgilerini Güncelledi.`)
 })
 ```
