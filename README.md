@@ -1,4 +1,4 @@
-# Discord.js'teki Tüm Eventlerin Türkçe Bir Şekilde Anlatımı
+# Discord.js'teki Eventlerin Türkçe Bir Şekilde Anlatımı
 
 
 Ufak Bilgilendirme :
