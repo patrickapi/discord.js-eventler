@@ -81,3 +81,27 @@ client.on("roleUpdate", (role) => {
 console.log(`${role.name} Adlı Kanal Güncellendi.`)
 })
 ```
+
+## Emoji Eventleri (3)
+
+### Emoji Create :
+Açıklama : Bir Emoji Oluşturulduğunda Çalışır
+```js
+client.on("emojiCreate", (emoji) => {
+console.log(`${emoji.name} Adlı Kanal Olıştuldu.`)
+})
+```
+### Emoji Delete :
+Açıklama : Bir Emoji Silindiğinde Çalıır
+```js
+client.on("emojiDelete", (emoji) => {
+console.log(`${emoji.name} Adlı Kanal Silindi.`)
+})
+```
+### Emoji Update :
+Açıklama : Bir Emoji Güncellendiğinde Çalışır
+```js
+client.on("emojiUpdate", (emoji) => {
+console.log(`${emoji.name} Adlı Kanal Güncellendi.`)
+})
+```
