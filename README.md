@@ -164,3 +164,13 @@ client.on("guildMemberUpdate", (oldMember,newMember) => {
 console.log(`${oldMember.username} Adlı Kişi Bilgilerini Güncelledi.`)
 })
 ```
+
+## Diğer Eventler :
+
+### Ready  :
+Açıklama : Bot Aktif Olduğunda Çalışır.
+```js
+client.on("guildMemberUpdate", (oldMember,newMember) => {
+console.log(`${oldMember.username} Adlı Kişi Bilgilerini Güncelledi.`)
+})
+```
