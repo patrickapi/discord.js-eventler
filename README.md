@@ -1,4 +1,4 @@
-# Discord.js'teki Tüm Eventlerin Türkçe Bir Şekilde Anlatımı
+### Discord.js'teki Tüm Eventlerin Türkçe Bir Şekilde Anlatımı
 
 
 Ufak Bilgilendirme :
@@ -9,11 +9,11 @@ Kısmını Botunuzu Nasıl Tanımladıysanız Öyle Değiştirceksiniz.
 
 
 
-# Mesaj Eventleri ()
+## Mesaj Eventleri ()
 
 
-Message :
-
+# Message :
+Açıklama : Bir Mesaj Atıldığında Çalışır.
 ```js
 client.on("message", message => {
 console.log(`${message} Adlı Mesaj Atıldı.`)
