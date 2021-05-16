@@ -106,12 +106,40 @@ console.log(`${emoji.name} Adlı Kanal Güncellendi.`)
 })
 ```
 
-## Emoji Eventleri (8)
+## Guild Eventleri (8)
 
 ### Guild Create :
 Açıklama : Bot Bir Sunucuya Katıldığında Çalışır
 ```js
 client.on("guildCreate", (guild) => {
 console.log(`${guild.name} Adlı Sunucuya Katıldım.`)
+})
+```
+### Guild Delete :
+Açıklama : Bot Bir Sunucudan Atıldığında Çalışır
+```js
+client.on("guildDelete", (guild) => {
+console.log(`${guild.name} Adlı Sunucudan Atıldım.`)
+})
+```
+### Guild Ban Add :
+Açıklama : Sunucuda Ban Atıldığında Çalışır.
+```js
+client.on("guildBanAdd", (guild,user) => {
+console.log(`${guild.name} Adlı Sunucuda ${user.username} Adlı Kişi Banlandı.`)
+})
+```
+### Guild Ban Remove :
+Açıklama : Sunucuda Ban Kaldırıldığında Çalışır.
+```js
+client.on("guildBanRemove, (guild,user) => {
+console.log(`${guild.name} Adlı Sunucuda ${user.username} Adlı Kişinin Banı Kaldırıldı.`)
+})
+```
+### Guild Update  :
+Açıklama : Sunucuda Değişiklik Yapıldığında Çalışır.
+```js
+client.on("guildBanRemove, (oldGuild,newGuild) => {
+console.log(`${oldGuild.name} Düzenlendi.`)
 })
 ```
