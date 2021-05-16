@@ -143,3 +143,17 @@ client.on("guildBanRemove, (oldGuild,newGuild) => {
 console.log(`${oldGuild.name} Düzenlendi.`)
 })
 ```
+### Guild Member Add  :
+Açıklama : Sunucuya Birisi Katılınca Çalışır.
+```js
+client.on("guildMemberAdd, (member) => {
+console.log(`${member} Sunucuya Katıldı..`)
+})
+```
+### Guild Member Remove  :
+Açıklama : Sunucudan Birisi Çıkınca Çalışır.
+```js
+client.on("guildMemberRemove, (member) => {
+console.log(`${member} Sunucudan Ayrıldı.`)
+})
+```
